@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textViewValorMensal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Valor Mensal:"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="63dp" />
+
+    <EditText
+        android:id="@+id/editTextValorMensal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        tools:layout_editor_absoluteX="129dp"
+        tools:layout_editor_absoluteY="48dp"
+        android:layout_below="@+id/textViewValorMensal"/>
+
+    <TextView
+        android:id="@+id/textViewValorCiclo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Valor Ciclo"
+        tools:layout_editor_absoluteX="24dp"
+        tools:layout_editor_absoluteY="141dp"
+        android:layout_below="@id/editTextValorMensal" />
+
+    <EditText
+        android:id="@+id/editTextValorCiclo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        tools:layout_editor_absoluteX="129dp"
+        tools:layout_editor_absoluteY="127dp"
+        android:layout_below="@id/textViewValorCiclo"/>
+
+    <TextView
+        android:id="@+id/textViewMesesInvestidos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Qtde Meses de Investimento"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="232dp"
+        android:layout_below="@+id/editTextValorCiclo"/>
+
+    <EditText
+        android:id="@+id/editTextMesesInvestidos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        tools:layout_editor_absoluteX="207dp"
+        tools:layout_editor_absoluteY="219dp"
+        android:layout_below="@id/textViewMesesInvestidos"/>
+
+    <TextView
+        android:id="@+id/textViewMesesCiclo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Qtde Meses de um Ciclo"
+        tools:layout_editor_absoluteX="14dp"
+        tools:layout_editor_absoluteY="318dp"
+        android:layout_below="@+id/editTextMesesInvestidos"/>
+
+    <EditText
+        android:id="@+id/editTextMesesCiclo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        tools:layout_editor_absoluteX="173dp"
+        tools:layout_editor_absoluteY="308dp"
+        android:layout_below="@id/textViewMesesCiclo"/>
+
+    <TextView
+        android:id="@+id/textViewPorcentagemRetorno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Porcentagem de Retorno:"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="412dp"
+        android:layout_below="@+id/editTextMesesCiclo" />
+
+    <EditText
+        android:id="@+id/editTextPorcentagemRetorno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        tools:layout_editor_absoluteX="189dp"
+        tools:layout_editor_absoluteY="396dp"
+        android:layout_below="@+id/textViewPorcentagemRetorno"/>
+
+    <TextView
+        android:id="@+id/textViewSaldoInicial"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Saldo Inicial:"
+        tools:layout_editor_absoluteX="25dp"
+        tools:layout_editor_absoluteY="510dp"
+        android:layout_below="@+id/editTextPorcentagemRetorno"/>
+
+    <EditText
+        android:id="@+id/editTextSaldoInicial"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        tools:layout_editor_absoluteX="109dp"
+        tools:layout_editor_absoluteY="495dp"
+        android:layout_below="@+id/textViewSaldoInicial"/>
+
+    <Button
+        android:id="@+id/buttonCalc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CALCULAR"
+        android:layout_below="@+id/editTextSaldoInicial"
+        android:layout_centerInParent="true"/>
+
+</RelativeLayout>

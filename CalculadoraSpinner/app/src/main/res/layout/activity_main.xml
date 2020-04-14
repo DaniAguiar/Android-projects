@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textViewValueA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Valor A:" />
+
+    <EditText
+        android:id="@+id/editTextValueA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:layout_below="@+id/textViewValueA"/>
+
+    <TextView
+        android:id="@+id/textViewValueB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Valor B:"
+        android:layout_below="@+id/editTextValueA"/>
+
+    <EditText
+        android:id="@+id/editTextValueB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:layout_below="@+id/textViewValueB"/>
+
+    <TextView
+        android:id="@+id/textViewOperation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Operações:"
+        android:layout_below="@+id/editTextValueB"
+        android:layout_centerHorizontal="true"/>
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewOperation"/>
+
+    <Button
+        android:id="@+id/buttonCalc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calcular"
+        android:layout_below="@+id/spinner"
+        android:layout_centerInParent="true"/>
+</RelativeLayout>

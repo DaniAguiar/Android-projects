@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textViewInitial"
+        android:layout_width="165dp"
+        android:layout_height="23dp"
+        android:text="Calculadora"
+        android:visibility="visible"
+        tools:layout_editor_absoluteX="83dp"
+        tools:layout_editor_absoluteY="81dp"
+        tools:visibility="visible" />
+
+    <EditText
+        android:id="@+id/txtValorA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:layout_below="@id/textViewFirstNumber"
+        />
+
+    <EditText
+        android:id="@+id/txtValorB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:layout_below="@id/textViewSecondNumber" />
+
+    <TextView
+        android:id="@+id/textViewFirstNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Número 1:"
+        android:layout_below="@id/textViewInitial" />
+
+    <TextView
+        android:id="@+id/textViewSecondNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Número 2:"
+        android:layout_below="@id/txtValorA" />
+
+    <Button
+        android:id="@+id/btnSoma"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+"
+        android:layout_below="@id/txtValorB"
+        />
+    <Button
+        android:id="@+id/btnSubtracao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-"
+        android:layout_below="@id/txtValorB"
+        android:layout_toRightOf="@id/btnSoma"
+        />
+    <Button
+        android:id="@+id/btnMultiplicacao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="x"
+        android:layout_below="@id/txtValorB"
+        android:layout_toRightOf="@id/btnSubtracao"
+        />
+    <Button
+        android:id="@+id/btnDivisao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="/"
+        android:layout_below="@id/txtValorB"
+        android:layout_toRightOf="@id/btnMultiplicacao"
+        />
+
+</RelativeLayout>
