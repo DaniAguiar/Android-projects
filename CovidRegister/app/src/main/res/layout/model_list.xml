@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+    <TextView
+        android:id="@+id/lblValorA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nome cidade"
+        android:layout_marginLeft="10dp" />
+
+    <TextView
+        android:id="@+id/lblValorB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Casos confirmados: "
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/lblValorA"/>
+
+    <TextView
+        android:id="@+id/lblqtd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="diagnóstico"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/lblValorA"
+        android:layout_toRightOf="@+id/lblValorB"/>
+
+</RelativeLayout>
